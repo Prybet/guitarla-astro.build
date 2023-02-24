@@ -1,0 +1,50 @@
+---
+import Layout from "../layouts/Layout.astro";
+import about from "../img/about.jpg";
+---
+
+<Layout
+	title="Nosotros."
+	description="Tienda de instrumentos musicales, guitarras, cursos, blog y más"
+>
+	<main class="container">
+		<h1 class="heading">Nosotros</h1>
+		<div class="content">
+			<img src={about} alt="about image" />
+			<div>
+				<p>
+					Curabitur pulvinar tortor non vulputate iaculis. Fusce
+					cursus dui quis velit bibendum, at vestibulum eros laoreet.
+					Sed a sem tempus, viverra ipsum vel, laoreet mauris. Ut
+					fermentum sagittis erat, id lacinia ligula mattis ac.
+					Phasellus vitae est non orci rutrum aliquet at id purus.
+					Aliquam erat volutpat. Sed in risus consectetur, venenatis
+					mauris sit amet, elementum nisi. Nullam est purus, rhoncus
+					nec tortor eu.
+				</p>
+				<p>
+					Suspendisse volutpat iaculis leo in elementum. Donec vel
+					ornare arcu. Donec at turpis eros. Suspendisse at felis
+					varius, feugiat nibh non, fringilla neque. Sed consectetur
+					lacus vitae metus ornare, a porta quam semper. Pellentesque
+					sagittis imperdiet erat, nec consequat neque sollicitudin
+					sed. purus.
+				</p>
+			</div>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	.content {
+		display: grid;
+		gap: 4rem;
+		text-align: justify;
+	}
+	@media (min-width: 768px) {
+		.content {
+			grid-template-columns: repeat(2, 1fr);
+			align-items: center;
+		}
+	}
+</style>
